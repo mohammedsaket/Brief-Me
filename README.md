@@ -16,31 +16,32 @@ Brief Me is an open-source and free-to-use Chrome extension. We believe in makin
 
 ## Installation
 
-### Method : Manual Installation (For Development)
-1. Clone this repository:
-```bash
-git clone https://github.com/yourusername/brief-me.git
-cd brief-me
-```
+### Manual Installation (For Development)
 
-2. Install dependencies:
-```bash
-npm install
-```
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/brief-me.git
+   cd brief-me
+   ```
 
-3. Build the extension:
-```bash
-npm run build
-```
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-4. Load the extension in Chrome:
+3. **Build the extension**
+   ```bash
+   npm run build
+   ```
+
+4. **Load the extension in Chrome**
    - Open Chrome and type `chrome://extensions/` in the address bar
    - Enable "Developer mode" by toggling the switch in the top-right corner
    - Click the "Load unpacked" button
    - Navigate to your project directory and select the `dist` folder
    - The extension should now appear in your Chrome toolbar
 
-5. Pin the extension (Optional but recommended):
+5. **Pin the extension (Optional but recommended)**
    - Click the puzzle piece icon (Extensions menu) in the Chrome toolbar
    - Find "Brief Me" in the list
    - Click the pin icon to keep the extension visible in your toolbar

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Brain, MessageSquare, Loader2, Moon, Sun, Copy, RefreshCw } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { GoogleGenerativeAI, GenerateContentRequest } from '@google/generative-ai';
+import ReactMarkdown from 'react-markdown';
 
 // Initialize Gemini
 const apiKey = import.meta.env.VITE_GOOGLE_API_KEY;
@@ -180,7 +181,7 @@ function App() {
   };
 
   return (
-    <div className={`w-[400px] max-h-[750px] p-6 ${isDark ? 'dark bg-gray-900' : 'bg-gray-50'}`}>
+    <div className={`w-[400px] p-6 ${isDark ? 'dark bg-gray-900' : 'bg-gray-50'}`}>
       <motion.div 
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -390,7 +391,9 @@ function App() {
                       className="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-lg"
                     >
                       <h2 className="font-medium mb-2 dark:text-white">Answer:</h2>
-                      <p className="text-gray-700 dark:text-gray-300 leading-relaxed">{answer}</p>
+                      <div className="text-gray-700 dark:text-gray-300 leading-relaxed prose dark:prose-invert max-w-none">
+                        <ReactMarkdown>{answer}</ReactMarkdown>
+                      </div>
                     </motion.div>
                   )}
                 </AnimatePresence>
