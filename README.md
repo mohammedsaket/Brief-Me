@@ -10,6 +10,10 @@ A Chrome extension that helps you summarize web pages and ask questions in multi
 - Powered by Google's Generative AI
 - Supports multiple languages
 
+## About
+
+Brief Me is an open-source and free-to-use Chrome extension. We believe in making AI-powered tools accessible to everyone. Feel free to use, modify, and contribute to this project!
+
 ## Installation
 
 ### Method : Manual Installation (For Development)
@@ -85,6 +89,14 @@ brief-me/
 
 ## Contributing
 
+We welcome contributions from the community! Whether you want to:
+- Add new features
+- Fix bugs
+- Improve the UI/UX
+- Add support for more languages
+- Enhance the AI capabilities
+
+Here's how you can contribute:
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/amazing-feature`)
 3. Commit your changes (`git commit -m 'Add some amazing feature'`)
